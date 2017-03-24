@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Codija, HTML, CSS, web, development, jQuery, JavaScript, School">
+    <meta name="description" content="School: Project made for practice">
+    <title>School</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="navbar" id="navbar">
+            <a href="#home" class="nav-item">Bootcamp</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#schedule" class="nav-item">Schedules</a>
+            <a href="#contact" class="nav-item">Contact</a>
+            <a href="javascript:void(0);" class="nav-item-icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="mySlides">
+            <img src="img/bg1.jpg" class="header-img" alt="PC">
+            <div class="header-text">
+                <h3 class="logo">Web Development</h3>
+                <p><b>Learn to Code from Scratch!</b></p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="img/bg2.jpg" class="header-img" alt="Coffee and phone">
+            <div class="header-text">
+                <h3>Master Teachers</h3>
+                <p><b>Web developer Ninja-s with 15+ years experience.</b></p>
+            </div>
+        </div>
+
+        <div class="mySlides">
+            <img src="img/bg3.jpg" class="header-img" alt="Solving problem on paper">
+            <div class="header-text">
+              <h3>Top Program</h3>
+              <p><b>From Zero to Hero!</b></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <h2 class="school-about">About Us</h2>
+        <p class="text-small"><i>We love coding</i></p>
+        <p class="text-wall">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non neque malesuada, hendrerit enim ut, blandit quam. Vestibulum ut elit leo. Nulla nulla enim, venenatis vel augue ut, lacinia porttitor turpis. Maecenas eget sodales lorem. In id augue eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo diam, interdum sagittis velit id, volutpat sodales est. Nullam sed sem semper, efficitur metus quis, interdum elit. Maecenas gravida augue id justo fermentum, eget interdum enim varius. Nullam elementum ipsum tortor.Integer vehicula ante sapien, bibendum pretium augue semper et. Suspendisse iaculis, ex in hendrerit rutrum, neque nisi egestas velit, ac consectetur leo elit convallis sapien. Quisque rutrum, nulla et eleifend sodales, ante quam fringilla nibh, a sagittis enim nunc sed nunc. Fusce quis nisi id ipsum interdum fringilla et eu est. Praesent ligula odio, facilisis sit amet venenatis sit amet, molestie eu elit. Ut turpis mauris, gravida in scelerisque finibus, tincidunt eu arcu.</p>
+        <div class="img-container">
+            <div class="img-con">
+                <p>Marko Markovic</p>
+                <img src="img/profile-image.png" class="imgs" alt="Marko Markovic">
+            </div>
+            <div class="img-con">
+                <p>Darko Misic</p>
+                <img src="img/profile-image.png" class="imgs" alt="Darko Misic">
+            </div>
+            <div class="img-con">
+                <p>Pavle Ivanovic</p>
+                <img src="img/profile-image.png" class="imgs" alt="Pavle Ivanovic">
+            </div>
+        </div>
+    </section>
+
+    <section class="schedules" id="schedule">
+        <div class="schedules-container">
+            <h2 class="schedule-header">Schedules</h2>
+            <p class="text-small"><i>Remember to reserve your spot!</i></p><br>
+
+            <ul class="schedules-available">
+                <li class="sc-item">January <span class="sp-sold">Sold out</span></li>
+                <li class="sc-item">February <span class="sp-sold">Sold out</span></li>
+                <li class="sc-item">March <span class="sp-sold">Sold out</span></li>
+                <li class="sc-item">April <span class="sp-ava">3</span></li>
+            </ul>
+
+            <div class="school-place">
+                <div class="school-img-container">
+                    <img src="img/place1.jpg" alt="Belgrade" class="img-hover">
+                    <div class="text-container">
+                        <p><b>Belgrade</b></p>
+                        <p class="text-sc-small">Wen 1 Apr 2017</p>
+                        <p>Pellentesque fermentum interdum commodo donec.</p>
+                        <button class="sc-button" onclick="document.getElementById('scModal').style.display='block'">Reserve spot</button>
+                    </div>
+                </div>
+
+                <div class="school-img-container">
+                    <img src="img/place2.jpg" alt="New York" class="img-hover">
+                    <div class="text-container">
+                        <p><b>New York</b></p>
+                        <p class="text-sc-small">Fri 3 Apr 2017</p>
+                        <p>Pellentesque fermentum interdum commodo donec.</p>
+                        <button class="sc-button" onclick="document.getElementById('scModal').style.display='block'">Reserve spot</button>
+                    </div>
+                </div>
+
+                <div class="school-img-container">
+                    <img src="img/place3.jpg" alt="San Francisco" class="img-hover">
+                    <div class="text-container">
+                        <p><b>London</b></p>
+                        <p class="text-sc-small">Mon 6 Apr 2017</p>
+                        <p>Pellentesque fermentum interdum commodo donec.</p>
+                        <button class="sc-button" onclick="document.getElementById('scModal').style.display='block'">Reserve spot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="scModal" class="modal">
+            <div class="modal-container">
+                <header class="modal-header">
+                    <span onclick="document.getElementById('scModal').style.display='none'" class="modal-right">&times;</span>
+                    <h2 class="reserve"><i class="fa fa-suitcase i-reserve"></i>Reservation</h2>
+                </header>
+
+                <div class="modal-body">
+                    <p class="text-color"><label><i class="fa fa-shopping-cart"></i> Price, $1000 per person</label></p>
+                    <input class="box" type="text" placeholder="How many?">
+                    <p class="text-color"><label><i class="fa fa-envelope"></i> Send To</label></p>
+                    <input class="box" type="text" placeholder="Enter email">
+                    <button class="btn-pay">RESERVE <i class="fa fa-check"></i></button>
+                    <button class="btn-close" onclick="document.getElementById('scModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <p class="modal-help">Need <a href="#" class="help">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="contact-header">CONTACT</h2>
+        <p class="text-small"><i>Let us know what you think</i></p>
+        <div class="contact-container">
+            <div class="icon-container">
+                <i class="fa fa-map-marker"></i> Zemun, Serbia<br>
+                <i class="fa fa-phone"></i> Phone: +38111 111-2223<br>
+                <i class="fa fa-envelope"> </i> Email: bootcamp@mail.com<br>
+            </div>
+            <div class="form">
+            <form action="action.php" target="_blank">
+                <div class="form-container">
+                    <div class="box-half">
+                        <input class="box-input" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="box-half">
+                        <input class="box-input" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="box-input" type="text" placeholder="Message" required name="Message">
+                <button class="btn-close" type="submit">SEND</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="map"></div>
+    <a href='#' class='scroll-to-top'></a>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="text-medium">Made with love</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlVnAXqLYftv-wDYkBXsNkuyEjwIcwKoo&callback=initMap"
+    async defer></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
